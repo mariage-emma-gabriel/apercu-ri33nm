@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Emma & Gabriel · 12 juin 2027">
+<meta property="og:description" content="Domaine de la Reynaude, Provence. Serez-vous des nôtres ?">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emma &amp; Gabriel — 12 juin 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..800,0..100,0..1;1,9..144,400..800,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --creme:#FBF4E8; --creme2:#F4E6CF; --sable:#EAD7B7; --terre:#C8462C; --terre2:#A93A24; --or:#D9A441;
+  --olive:#4C5A2E; --bordeaux:#7B2238; --magenta:#C8327F; --ink:#2B211B; --muted:#7A6A5A;
+  /* carte */
+  --paper:#FBF4E8; --land:#F7EAD3; --water:#A7D3CF; --river:#8CC3BE; --road:#EBC48E; --road2:#F1D9B2;
+  --route:#C8462C; --route-dim:#E9BBA9; --dom:#7B2238; --gold:#D9A441; --card:#FFFAF1; --line:#EAD9BE;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--creme);color:var(--ink);font-family:"Inter",system-ui,sans-serif;font-size:16.5px;line-height:1.55}
+a{color:inherit}
+.disp{font-family:"Fraunces",serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:700;letter-spacing:-.01em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{scroll-margin-top:64px}
+/* navigation */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:rgba(251,244,232,.0);transition:background .3s, box-shadow .3s}
+.nav.solid{background:rgba(251,244,232,.94);box-shadow:0 1px 0 var(--line)}
+.nav .mono{font-family:"Fraunces",serif;font-style:italic;font-weight:700;font-size:22px;color:#fff;text-decoration:none;transition:color .3s}
+.nav.solid .mono{color:var(--bordeaux)}
+.nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-weight:600;font-size:14.5px;color:#fff;transition:color .3s}
+.nav.solid ul a{color:var(--ink)}
+.nav ul a.cta{background:var(--terre);color:#fff !important;padding:7px 14px;border-radius:999px}
+@media (max-width:820px){.nav ul li:not(.keep){display:none}}
+/* accueil */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;background-size:cover;background-position:72% center;color:#FFF7EA}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,20,12,.82) 0%,rgba(32,20,12,.55) 38%,rgba(32,20,12,.08) 70%),linear-gradient(0deg,rgba(32,20,12,.55) 0%,rgba(32,20,12,0) 40%)}
+.hero .in{position:relative;padding:0 24px 12vh;max-width:1200px;margin:0 auto;width:100%}
+.hero .kick{font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;opacity:.92;margin-bottom:14px}
+.hero h1{font-size:clamp(52px,7.6vw,112px);line-height:.92;margin:0 0 18px;color:#FFF7EA}
+.amp{font-family:"Fraunces",serif;font-style:italic;font-weight:500;color:var(--or);font-variation-settings:"SOFT" 100,"WONK" 1;display:inline-block;transform:translateY(.04em)}
+.hero p{font-size:20px;max-width:520px;margin:0 0 26px;opacity:.95}
+.btn{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;padding:13px 24px;border-radius:999px;font-weight:600;font-size:15.5px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn.main{background:var(--terre);color:#fff}
+.btn.main:hover{background:var(--terre2)}
+.btn.ghost{border:1.5px solid rgba(255,247,234,.8);color:#FFF7EA;background:transparent}
+.btn.ghost.off{opacity:.7;cursor:default}
+.btn.big{padding:17px 38px;font-size:18px;box-shadow:0 10px 28px rgba(120,30,10,.38)}
+.btn.ghost:hover{background:rgba(255,247,234,.12)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+/* bandeau infos */
+.infos{background:#F3E3C7;color:var(--ink);border-top:1px solid #E6CFA8;border-bottom:1px solid #E6CFA8}
+.infos .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.infos .col{padding:34px 28px;border-left:1px solid rgba(123,34,56,.14)}
+.infos .col:first-child{border-left:0;padding-left:0}
+.infos h3{margin:0 0 6px;font-size:26px;color:var(--terre)}
+.infos p{margin:0;font-size:16px;line-height:1.5;color:#4A3F35}
+.infos a{color:var(--terre);font-weight:600}
+@media (max-width:820px){.infos .wrap{grid-template-columns:1fr}.infos .col{border-left:0;padding:22px 0;border-top:1px solid rgba(123,34,56,.14)}.infos .col:first-child{border-top:0}}
+/* titres de section */
+.sec{padding:84px 0}
+.sec .kicker{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--olive);font-weight:700}
+.sec h2{font-size:clamp(40px,5vw,62px);line-height:1;margin:8px 0 14px}
+.sec .lead{font-size:18px;max-width:760px;color:#4F4338;margin:0 0 30px}
+/* carte */
+.grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr);gap:28px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+.mapbox{background:var(--land);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+.town{font-family:"Fraunces",serif;font-size:23px;fill:#5E4B3C;font-weight:600;font-style:italic}
+.nature{font-family:"Fraunces",serif;font-style:italic;font-size:24px;fill:#4F8F8A;letter-spacing:.04em}
+.monlab{font-family:"Fraunces",serif;font-style:italic;font-size:18px;fill:#6E4F33;font-weight:600}
+.stlabel{font-weight:700;font-size:19px;fill:var(--ink)}
+.sttime{font-weight:700;font-size:17px;fill:var(--route)}
+.station.dimst .sttime{fill:var(--route-dim)}
+.stsub{font-size:15px;fill:var(--muted);font-weight:600}
+.halo{paint-order:stroke;stroke:var(--land);stroke-width:5px;stroke-linejoin:round}
+.route{fill:none;stroke:var(--route);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;transition:stroke .25s,opacity .25s}
+.casing{fill:none;stroke:#FFF8EC;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;transition:opacity .25s}
+.dim .route{stroke:var(--route-dim);opacity:.55}
+.dim .casing{opacity:.4}
+.station{cursor:pointer}
+.station circle.bg{fill:var(--olive)}
+.station:hover circle.bg,.station.on circle.bg{fill:var(--route)}
+.caption{font-size:13px;color:var(--muted);margin-top:8px}
+.cards{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;cursor:pointer;transition:border-color .2s, box-shadow .2s}
+.card:hover,.card.on{border-color:var(--route);box-shadow:0 1px 0 var(--route)}
+.card h3{margin:0;font-size:18.5px;font-weight:700;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.card h3 .t{font-size:16px;color:var(--route);white-space:nowrap}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--olive);padding:3px 8px;border-radius:999px;margin:0 0 6px}
+.card p{margin:6px 0 0;font-size:15.5px;line-height:1.45;color:#4A3F35}
+.card .links{margin-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+.card a{color:var(--route);font-weight:700;font-size:14.5px;text-decoration:none;border-bottom:1px solid rgba(200,70,44,.35)}
+.car{border:1px dashed #DCC6A3;border-radius:8px;padding:14px 18px}
+.car h4{margin:0 0 6px;font-size:16px}.car p{margin:2px 0;font-size:15px;color:#4A3F35}
+/* programme */
+.imgsec{position:relative;background-size:cover;background-position:center 35%;color:#FFF7EA}
+.imgsec::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,20,12,.84) 0%,rgba(32,20,12,.6) 50%,rgba(32,20,12,.25) 100%)}
+.imgsec .wrap{position:relative}
+.imgsec .kicker{color:var(--or)}
+.imgsec h2{color:#FFF7EA}
+.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;max-width:860px}
+.day{background:rgba(251,244,232,.08);border:1px solid rgba(251,244,232,.22);border-radius:10px;padding:22px 24px;backdrop-filter:blur(2px)}
+.day h3{margin:0 0 12px;font-size:28px;color:var(--or)}
+.day ol{list-style:none;margin:0;padding:0}
+.day li{padding:10px 0;border-top:1px solid rgba(251,244,232,.18);display:flex;gap:14px}
+.day li:first-child{border-top:0}
+.day li .h{font-weight:700;min-width:62px;color:#FCE3B5}
+.soon{font-size:14px;opacity:.85;margin-top:18px}
+@media (max-width:820px){.days{grid-template-columns:1fr}}
+/* dormir */
+.travaux{display:flex;gap:28px;align-items:center;background:var(--creme2);border-radius:12px;padding:28px 30px}
+.travaux img{width:150px;flex:0 0 auto}
+.travaux h3{margin:0 0 6px;font-size:30px}
+.travaux p{margin:0;color:#4F4338;font-size:17px}
+@media (max-width:620px){.travaux{flex-direction:column;text-align:center}}
+/* répondre */
+.rsvp-band{height:320px;background-size:cover;background-position:center 40%;border-radius:12px 12px 0 0}
+.rsvp{background:#FFF9EF;border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px;padding:34px 34px 40px;position:relative;overflow:hidden}
+.rsvp .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:820px){.rsvp .cols{grid-template-columns:1fr}.rsvp{padding:24px 18px 32px}}
+fieldset{border:0;margin:0 0 22px;padding:0}
+legend{font-family:"Fraunces",serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:700;font-size:24px;margin-bottom:10px;color:var(--bordeaux)}
+label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 4px}
+input[type=text],input[type=email],input[type=tel],textarea,select{width:100%;padding:11px 13px;border:1px solid #E1CFB1;border-radius:8px;background:#fff;font:inherit;font-size:16px;color:var(--ink)}
+input:focus,textarea:focus,select:focus{outline:2px solid rgba(200,70,44,.35);border-color:var(--terre)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.row3{display:grid;grid-template-columns:110px 1fr;gap:12px}
+.person{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end;padding:12px 14px;border:1px solid #EAD8BA;border-radius:10px;margin-bottom:10px;background:#FFFDF8}
+.person .full{grid-column:1/-1}
+.person .x{border:0;background:none;color:var(--muted);font-size:20px;cursor:pointer;padding:0 4px}
+.seg{display:inline-flex;border:1px solid #E1CFB1;border-radius:999px;overflow:hidden}
+.seg button{border:0;background:#fff;padding:9px 14px;font:inherit;font-size:14px;font-weight:600;color:var(--muted);cursor:pointer}
+.seg button.on{background:var(--olive);color:#fff}
+.seg button.on.no{background:var(--bordeaux)}
+.add{border:1.5px dashed var(--olive);background:transparent;color:var(--olive);font:inherit;font-weight:700;padding:10px 16px;border-radius:999px;cursor:pointer}
+.pads{display:flex;gap:6px;align-items:flex-end;min-height:56px;margin-top:10px}
+.pads img{width:52px;height:auto}
+.submit{margin-top:8px}
+.proto{font-size:13px;color:var(--muted);margin-top:10px}
+.thanks{display:none;margin-top:16px;padding:18px 20px;border-radius:10px;background:var(--olive);color:#fff;font-size:18px}
+.thanks.no{background:var(--bordeaux)}
+.thanks .disp{font-size:26px;display:block;margin-bottom:4px}
+#hopper{position:absolute;left:-120px;bottom:18px;width:96px;pointer-events:none}
+#hopper img{width:100%;display:block}
+.petal{position:fixed;top:-20px;width:12px;height:16px;border-radius:12px 0 12px 0;pointer-events:none;z-index:60}
+/* questions */
+.faq details{border-top:1px solid var(--line);padding:16px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between}
+.faq summary::after{content:"+";font-family:"Fraunces",serif;font-size:26px;color:var(--terre);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:8px 0 0;color:#4F4338;max-width:760px}
+footer{background:var(--ink);color:#EADBC5;padding:40px 0;text-align:center}
+footer .disp{font-size:34px;color:#FFF3E2}
+footer img{width:70px;margin-top:10px}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+  <a class="mono" href="#accueil">E &amp; G</a>
+  <ul>
+    <li><a href="#venir">Venir</a></li>
+    <li><a href="#programme">Programme</a></li>
+    <li><a href="#dormir">Dormir</a></li>
+    <li><a href="#questions">Questions</a></li>
+    <li class="keep"><a class="cta" href="#repondre">Répondre</a></li>
+  </ul>
+</nav>
+
+<section id="accueil" class="hero" style="background-image:url(img/27d5daf71a.jpg)">
+  <div class="in">
+    <div class="kick">12 et 13 juin 2027 · Domaine de la Reynaude, Provence</div>
+    <h1 class="disp">Emma <span class="amp">&amp;</span> Gabriel</h1>
+    <p>Nous nous marions en Provence, et nous aimerions beaucoup vous avoir avec nous.</p>
+    <div class="btns"><a class="btn main big" href="#repondre">Répondre</a><a class="btn ghost" href="https://youtu.be/GNL1ZWafK14" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 6.2v7.6l6-3.8z" fill="currentColor"/></svg>Voir le film</a></div>
+  </div>
+</section>
+
+<section class="infos">
+  <div class="wrap">
+    <div class="col"><h3 class="disp">Quand</h3><p><strong>Samedi 12 juin 2027</strong> : cérémonie, dîner et soirée.<br>Dimanche 13 juin : brunch.</p></div>
+    <div class="col"><h3 class="disp">Où</h3><p>Domaine de la Reynaude, à Aurons, près de Salon-de-Provence. <a href="#venir">Comment venir</a></p></div>
+    <div class="col"><h3 class="disp">Répondre</h3><p>Deux minutes, et c'est fait. <a href="#repondre">C'est par ici</a></p></div>
+  </div>
+</section>
+
+<section id="venir" class="sec">
+  <div class="wrap">
+    <div class="kicker">Venir</div>
+    <h2 class="disp">Jusqu'au domaine</h2>
+    <p class="lead">Trois gares et un aéroport permettent de rejoindre le domaine. Touchez une gare sur la carte pour voir le trajet.</p>
+    <div class="grid">
+      <div><div class="mapbox"><svg id="map" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte des accès au Domaine de la Reynaude"></svg></div>
+        <div class="caption">Durées indicatives en voiture, hors trafic.</div></div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </div>
+</section>
+
+<section id="programme" class="imgsec sec" style="background-image:url(img/e992863628.jpg)">
+  <div class="wrap">
+    <div class="kicker">Programme</div>
+    <h2 class="disp">Le week-end</h2>
+    <div class="days">
+      <div class="day"><h3 class="disp">Samedi 12 juin</h3><ol>
+        <li><span class="h">Après-midi</span><span>Cérémonie laïque, face aux vignes</span></li>
+        <li><span class="h">Puis</span><span>Cocktail sur le parvis</span></li>
+        <li><span class="h">Le soir</span><span>Dîner et soirée dans la cour du XVIe siècle, jusqu'à 4 h</span></li>
+      </ol></div>
+      <div class="day"><h3 class="disp">Dimanche 13 juin</h3><ol>
+        <li><span class="h">Matin</span><span>Brunch au domaine</span></li>
+      </ol></div>
+    </div>
+    <p class="soon">Horaires précis à venir.</p>
+  </div>
+</section>
+
+<section id="dormir" class="sec">
+  <div class="wrap">
+    <div class="kicker">Dormir</div>
+    <h2 class="disp">Où dormir</h2>
+    <div class="travaux"><img src="img/ce35c170db.png" alt=""><div><h3 class="disp">Rubrique en travaux</h3><p>Nous préparons la liste des hébergements autour du domaine. Elle arrive très vite ici.</p></div></div>
+  </div>
+</section>
+
+<section id="repondre" class="sec">
+  <div class="wrap">
+    <div class="kicker">Répondre</div>
+    <h2 class="disp">Serez-vous des nôtres ?</h2>
+    <p class="lead">Une seule réponse pour vous et, s'il y a lieu, les personnes invitées avec vous. Dites-nous qui vient, et laissez-nous votre adresse pour le faire-part.</p>
+    <div class="rsvp-band" style="background-image:url(img/8b8bddf283.jpg)"></div>
+    <form class="rsvp" id="rsvp" novalidate>
+      <div class="cols">
+        <div>
+          <fieldset><legend>Qui vient ?</legend>
+            <div id="people"></div>
+            <button type="button" class="add" id="addp">+ Ajouter une personne invitée avec vous</button>
+            <div class="pads" id="pads" aria-hidden="true"></div>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset><legend>Vos coordonnées</legend>
+            <div class="row2"><div><label for="mail">Email</label><input type="email" id="mail" placeholder="vous@exemple.fr"></div>
+            <div><label for="tel">Téléphone</label><input type="tel" id="tel" placeholder="06 …"></div></div>
+          </fieldset>
+          <fieldset><legend>Adresse pour le faire-part</legend>
+            <label for="adr">Adresse</label><input type="text" id="adr" placeholder="12 rue des Oliviers">
+            <div class="row3"><div><label for="cp">Code postal</label><input type="text" id="cp"></div><div><label for="ville">Ville</label><input type="text" id="ville"></div></div>
+            <label for="pays">Pays</label><input type="text" id="pays" value="France">
+          </fieldset>
+          <button type="submit" class="btn main submit">Envoyer la réponse</button>
+          <div class="proto">Aperçu : dans cette version, les réponses ne sont pas encore envoyées.</div>
+          <div class="thanks" id="thanks"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="questions" class="sec" style="padding-top:20px">
+  <div class="wrap faq">
+    <div class="kicker">Questions</div>
+    <h2 class="disp">Questions fréquentes</h2>
+        <details><summary>Comment rentrer après la soirée ?</summary><p>Certains d'entre vous dormiront sur place, au domaine. Pour les autres, des navettes avec chauffeur vous ramèneront vers vos hébergements. On vous donnera les détails plus près de la date.</p></details>
+    <details><summary>Les enfants sont-ils les bienvenus ?</summary><p>Oui, avec plaisir ! Prévenez-nous simplement à l'avance en les ajoutant dans le formulaire de réponse.</p></details>
+  </div>
+</section>
+
+<footer><div class="disp">Emma <span class="amp">&amp;</span> Gabriel</div><div>12 juin 2027 · Domaine de la Reynaude</div><img src="img/ce35c170db.png" alt=""></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+
+const DATA = {"W": 1000.0, "H": 1057.5931201416274, "layers": {"sea": "M-25.3,813.3 L-0.4,831.9 L8.2,850.5 L5.8,868.3 L-14.8,891.3 L-14.0,915.0 L12.6,930.8 L87.6,948.3 L245.2,949.9 L248.0,920.6 L224.6,893.9 L193.6,871.6 L165.8,842.5 L151.8,795.0 L151.8,693.9 L147.3,679.1 L116.9,630.5 L116.9,621.7 L134.6,632.4 L148.8,653.2 L165.8,698.7 L168.3,722.8 L165.8,805.6 L181.5,842.8 L216.1,875.5 L258.4,899.7 L276.4,932.2 L281.4,956.4 L303.3,943.7 L327.6,920.9 L293.4,923.5 L290.7,905.4 L275.8,872.3 L284.1,852.8 L294.1,844.0 L319.0,838.5 L355.6,817.7 L411.3,850.2 L427.0,853.5 L456.7,850.3 L480.7,833.0 L492.1,801.4 L479.9,766.1 L452.7,746.7 L443.5,735.1 L438.0,708.4 L451.3,659.7 L458.3,650.7 L483.4,679.5 L515.3,679.5 L536.5,686.7 L541.7,693.9 L549.4,727.7 L571.4,753.3 L597.5,758.0 L626.1,747.5 L655.9,727.7 L659.5,761.1 L646.5,792.7 L625.4,818.5 L606.0,834.4 L577.7,843.2 L486.9,843.2 L455.2,861.1 L434.3,900.2 L442.8,933.6 L463.3,965.3 L494.7,975.8 L556.3,979.0 L595.1,974.0 L671.7,975.7 L728.7,937.1 L774.4,966.9 L791.8,1026.5 L793.2,1043.0 L805.3,1057.0 L789.6,1094.5 L783.5,1128.1 L-51.0,1128.1 L-51.0,802.7 L-25.3,813.3Z", "lakes": "M3.6,712.5 L-32.8,713.7 L-51.0,711.7 L-51.0,615.0 L-17.8,613.5 L34.2,621.6 L53.7,640.9 L59.9,666.6 L45.1,688.1 L21.5,706.8 L3.6,712.5Z", "rivers": "M1051.0,484.8 L1023.0,499.1 L970.3,494.6 L850.6,458.0 L831.8,448.5 L814.2,435.4 L783.0,402.7 L772.0,395.2 L760.1,392.5 L743.1,391.9 L688.4,381.7 L625.1,382.0 L517.5,328.8 L495.8,312.3 L396.4,216.1 L332.6,175.6 L196.4,123.0 L186.4,123.8 M218.1,-70.5 L224.3,-65.2 L276.5,-7.6 L276.4,8.7 L271.8,17.6 L263.7,21.4 L252.5,22.3 L241.5,27.0 L243.5,38.4 L248.2,52.8 L245.5,66.0 L194.6,117.2 L185.9,123.8 L177.4,125.5 L130.3,157.8 L77.0,184.9 L68.1,191.6 L68.1,293.5 L62.5,325.4 L32.1,398.6 L37.1,432.1 L36.6,438.4 M38.2,437.1 L36.6,438.4 M36.6,438.4 L23.3,449.0 L11.6,442.7 L-5.9,438.0 L-51.0,438.0 M36.6,438.4 L30.9,509.5 L43.2,524.5 L63.4,537.6 L99.0,600.3 L116.9,621.7", "major": "M328.3,54.2 L318.6,25.4 L298.2,-66.0 L296.7,-70.5 M548.1,557.6 L547.6,553.1 M547.6,553.1 L545.2,532.1 L539.3,507.3 L531.1,483.6 L486.9,393.1 L370.6,197.1 L360.1,173.8 L350.9,149.5 L337.2,102.7 L322.2,37.4 M1051.0,769.5 L1027.3,765.0 L998.3,756.2 L921.4,722.8 L903.1,718.1 L894.1,717.1 L883.5,717.2 L873.3,718.4 L863.1,720.7 L859.9,721.7 M859.9,721.7 L852.9,724.1 L814.4,742.0 L804.6,743.9 L794.7,743.9 L775.0,741.1 L765.3,738.5 L728.2,719.3 L712.2,706.6 M712.2,706.6 L686.1,686.0 L655.1,653.8 L599.5,585.0 L582.9,569.5 L563.8,557.3 L558.9,555.4 L547.6,553.1 M547.6,553.1 L414.2,526.3 L396.0,525.1 L283.7,538.6 L230.6,538.8 L177.8,531.7 L126.0,516.4 L76.0,491.6 L22.7,457.4 L4.3,448.2 L-51.0,432.9 M-51.0,152.3 L-45.4,149.8 L-24.2,142.2 L41.3,112.0 L104.0,72.1 L148.0,35.1 L188.7,-12.2 L218.9,-70.3 L218.9,-70.5 M1051.0,545.2 L996.0,537.1 L974.9,536.9 L954.6,542.1 L946.9,548.5 L941.8,558.8 L939.1,571.0 L938.3,583.4 L938.7,597.1 L942.1,625.5 L942.4,632.7 L941.9,640.3 L939.5,644.1 L934.9,646.6 L916.9,651.4 L888.0,663.4 L878.4,669.2 L869.9,676.9 L865.8,681.8 L862.4,686.6 L859.6,692.2 L857.6,699.1 L857.3,705.1 L858.2,711.2 L859.4,717.2 L859.9,721.7 M859.9,721.7 L860.1,723.2 L859.5,737.1 L857.6,750.4 L854.5,763.3 L850.3,775.9 L839.7,800.6 L801.6,869.9 M1032.7,1056.9 L993.9,1051.8 L955.6,1042.4 L914.0,1024.7 L910.7,1022.8 L868.4,992.4 L840.5,967.7 L815.4,937.2 L813.2,933.7 L811.2,929.4 L809.8,924.2 L809.4,918.9 L810.4,908.0 L812.1,896.1 L812.5,889.7 L811.7,884.0 L808.9,880.0 L804.7,878.1 L796.1,877.3 M796.1,877.3 L719.6,897.8 L677.4,904.6 L634.9,906.6 L597.9,903.0 L561.2,894.8 L523.6,881.6 L440.2,841.4 L395.1,813.2 M989.5,752.5 L996.5,761.3 L1003.4,771.7 L1008.8,783.3 L1011.6,796.0 L1012.6,815.2 L1010.6,842.5 L1010.1,863.1 L1010.7,877.0 L1012.7,890.5 L1016.9,902.9 L1019.8,908.4 L1023.1,913.3 L1026.9,917.4 L1031.2,920.8 L1044.4,927.4 L1048.5,930.3 L1051.0,932.7 M1051.0,1017.9 L1044.6,1027.9 L1030.0,1047.3 M1030.0,1047.3 L1024.1,1055.1 M1027.2,1039.5 L1030.0,1047.3 M1030.0,1047.3 L1049.6,1102.1 L1051.0,1105.2 M714.9,699.4 L712.2,706.6 M712.2,706.6 L710.8,710.1 L709.1,715.5 L707.7,721.3 L705.6,734.6 L704.4,748.3 L704.2,761.4 L706.6,787.5 L712.6,824.5 L733.3,893.6", "second": "M395.1,813.2 L351.1,777.1 L223.7,647.7 L209.6,630.2 L196.6,611.3 L187.3,594.5 L179.8,575.7 L175.6,555.6 L176.0,534.3 M380.5,218.5 L418.2,209.9 L456.1,207.5 L659.9,224.4 L702.5,220.0 L824.5,191.6 L842.3,190.9 L859.7,193.8 L937.6,229.0 L978.2,236.9 L1014.7,239.7 L1051.0,236.4 M872.7,661.7 L858.4,644.7 L850.8,637.0 L842.7,630.5 L768.2,581.7 L761.0,575.2 L684.0,484.9 L676.6,474.7 L651.9,429.6 L645.0,420.0 L636.8,413.1 L627.9,408.1 L618.6,404.1 L611.8,401.9 L597.2,399.6 L492.4,400.3 M507.7,-70.5 L505.8,-66.3 L502.7,-60.9 L495.2,-50.7 L493.7,-49.2 L481.6,-41.1 L479.3,-40.0 L420.3,-23.9 L410.6,-19.7 L401.4,-14.6 L392.8,-8.0 L365.5,24.8 L344.5,46.4 L251.6,115.4 L237.9,122.2 L224.0,125.9 L207.4,126.1 L190.7,123.2 L158.2,112.1 L128.2,97.4 L113.9,86.9 L101.8,73.3 L100.2,70.9 L98.8,68.3 L97.6,65.6 L96.7,62.6 M123.1,-70.5 L129.2,-57.8 L158.1,-7.3 L169.9,20.5 M30.3,95.3 L-8.2,100.2 L-26.9,95.3 L-51.0,77.1", "deps": "M1014.9,267.5 L984.2,284.6 M984.2,284.6 L989.0,237.7 M989.0,237.7 L1013.5,218.7 M1013.5,218.7 L1047.4,146.5 M1047.4,146.5 L1020.3,132.6 M1020.3,132.6 L998.8,109.2 M998.8,109.2 L984.7,114.1 M984.7,114.1 L951.1,104.3 M951.1,104.3 L947.6,84.8 M947.6,84.8 L957.2,42.1 M957.2,42.1 L983.3,-8.4 M983.3,-8.4 L984.3,-70.4 M984.3,-70.4 L941.5,-61.3 M941.5,-61.3 L941.0,-70.5 M941.0,-70.5 L1051.0,-70.5 L1051.0,266.9 M1051.0,266.9 L1014.9,267.5 M246.7,151.1 L278.7,153.2 M278.7,153.2 L311.5,169.0 M311.5,169.0 L328.9,186.2 M328.9,186.2 L352.9,188.3 M352.9,188.3 L394.2,209.2 M394.2,209.2 L424.6,245.3 M424.6,245.3 L458.7,271.0 M458.7,271.0 L479.2,326.1 M479.2,326.1 L605.4,396.5 M605.4,396.5 L620.4,401.7 M620.4,401.7 L663.3,384.0 M663.3,384.0 L689.5,385.6 M689.5,385.6 L753.6,401.9 M753.6,401.9 L776.5,423.5 M776.5,423.5 L876.8,477.9 M876.8,477.9 L972.1,509.1 M972.1,509.1 L1011.8,504.9 M1011.8,504.9 L1051.0,507.7 M1051.0,507.7 L1051.0,1128.1 L779.1,1128.1 L784.0,1114.2 L808.7,1092.7 L802.3,1058.6 L781.3,1040.2 L800.4,998.2 L759.0,935.0 L731.1,931.3 L690.1,962.7 L654.4,975.3 L609.7,967.9 L600.3,975.9 L467.3,974.4 L448.0,954.7 L453.4,936.9 L404.0,871.1 L395.6,837.5 L358.6,827.5 L333.0,846.4 L290.1,865.5 L274.5,910.3 L300.8,930.0 L280.7,969.3 L258.2,973.2 L207.5,948.7 L140.5,944.3 L83.5,949.8 L5.9,930.6 L-17.6,913.6 L-23.0,890.7 L7.9,873.3 L2.1,831.2 L-18.3,813.3 L-51.0,801.9 L-51.0,442.3 M-51.0,442.3 L-43.9,440.6 M-43.9,440.6 L1.9,456.4 M1.9,456.4 L13.3,468.9 M13.3,468.9 L48.6,464.6 M48.6,464.6 L33.7,431.1 M33.7,431.1 L34.3,409.2 M34.3,409.2 L51.0,362.9 M51.0,362.9 L72.7,335.2 M72.7,335.2 L76.3,307.0 M76.3,307.0 L63.7,265.9 M63.7,265.9 L88.1,247.1 M88.1,247.1 L63.2,215.1 M63.2,215.1 L115.6,190.4 M115.6,190.4 L146.3,160.8 M146.3,160.8 L162.3,135.3 M162.3,135.3 L246.7,151.1 M444.4,691.4 L427.1,735.9 L433.3,775.4 L467.3,774.7 L481.5,784.7 L500.4,874.0 L541.5,868.5 L568.6,874.0 L592.1,858.8 L623.7,825.1 L659.3,800.2 L655.7,756.6 L635.5,745.7 L576.9,791.7 L533.4,696.5 L494.2,694.0 L476.0,702.0 L462.3,669.7 L443.3,654.9 L444.4,691.4 M212.2,-63.5 L213.4,-45.4 M213.4,-45.4 L262.9,7.1 M262.9,7.1 L267.5,47.3 M267.5,47.3 L240.8,44.0 M240.8,44.0 L239.9,73.9 M239.9,73.9 L203.1,115.8 M203.1,115.8 L162.3,135.3 M-51.0,442.3 L-51.0,-70.5 L199.8,-70.5 M199.8,-70.5 L212.2,-63.5 M1051.0,266.9 L1051.0,507.7 M1051.0,507.7 L1047.9,509.5 L1011.8,504.9 M199.8,-70.5 L941.0,-70.5"}, "routes": {"salon": {"d": "M518.5,537.0 L518.5,537.3 L518.6,537.6 L518.7,537.7 L518.7,537.8 L518.6,537.8 L518.5,537.8 L518.4,537.9 L518.3,537.9 L518.2,538.0 L518.1,538.1 L518.1,538.0 L518.1,538.0 L518.1,538.0 L518.0,538.0 L518.0,538.1 L517.9,538.0 L517.9,537.9 L517.8,537.8 L517.7,537.6 L517.4,536.7 L517.1,535.8 L517.1,535.6 L517.0,535.5 L517.0,535.3 L517.0,535.3 L517.1,535.3 L517.1,535.2 L517.1,535.1 L517.3,535.1 L517.3,535.1 L517.4,535.0 L517.5,535.0 L517.6,535.0 L517.7,534.9 L517.8,534.8 L517.9,534.8 L517.9,534.7 L518.0,534.7 L518.1,534.7 L518.2,534.7 L518.2,534.7 L518.4,534.9 L518.6,535.1 L518.6,535.1 L518.9,535.1 L521.0,535.1 L521.1,535.1 L521.2,535.1 L523.1,535.1 L523.4,535.1 L524.1,535.1 L524.1,535.1 L524.8,535.1 L524.9,535.1 L525.0,535.1 L525.5,535.1 L525.6,535.1 L525.7,535.2 L525.8,535.1 L526.1,535.0 L526.2,535.0 L526.2,535.0 L526.3,534.9 L526.5,534.7 L526.8,534.4 L527.2,534.1 L527.3,534.0 L527.4,533.8 L527.5,533.8 L527.6,533.8 L527.8,533.8 L527.8,533.8 L528.3,533.9 L528.6,534.1 L528.7,534.1 L528.8,534.1 L529.2,534.1 L529.4,534.1 L529.5,534.2 L529.6,534.3 L529.7,534.4 L529.7,534.5 L529.7,534.6 L529.7,534.7 L529.7,535.0 L529.9,535.0 L530.0,535.3 L530.0,535.9 L530.6,536.0 L530.7,536.0 L531.8,536.2 L531.9,536.3 L533.2,536.5 L533.4,535.3 L533.4,535.3 L533.4,535.3 L533.5,534.9 L533.5,534.9 L533.6,534.6 L533.6,534.6 L533.7,534.4 L533.7,534.3 L533.7,534.2 L533.7,534.0 L533.7,534.0 L533.7,533.9 L533.8,533.9 L533.8,533.8 L533.9,533.8 L534.1,533.8 L534.3,533.9 L534.7,534.0 L534.9,534.1 L535.1,534.3 L535.5,534.5 L535.7,534.7 L536.0,534.8 L536.1,534.8 L536.2,534.9 L536.3,534.9 L536.4,534.9 L536.5,535.0 L536.8,535.1 L537.0,535.1 L537.1,535.2 L537.2,535.2 L537.2,535.2 L537.2,535.2 L537.3,535.2 L537.3,535.2 L537.3,535.2 L537.3,535.1 L537.4,535.1 L537.4,535.1 L537.3,535.0 L537.3,535.0 L537.3,534.8 L537.4,534.8 L537.4,534.7 L538.0,534.1 L538.2,533.9 L538.4,533.7 L538.5,533.6 L538.6,533.5 L538.7,533.3 L538.8,533.2 L539.0,533.0 L539.3,532.9 L539.6,532.5 L540.0,532.3 L540.4,532.0 L540.4,531.9 L540.4,531.9 L540.7,531.7 L541.3,531.3 L541.3,531.2 L541.4,531.2 L541.4,531.2 L541.6,531.0 L541.8,530.9 L541.9,530.8 L542.2,530.6 L542.3,530.5 L542.4,530.5 L542.4,530.5 L542.8,530.4 L543.3,530.3 L543.5,530.3 L543.9,530.2 L544.3,530.1 L544.4,530.1 L544.6,530.1 L544.7,530.0 L545.0,529.9 L545.2,529.8 L545.3,529.7 L545.6,529.4 L545.7,529.3 L545.8,529.2 L546.7,528.0 L546.9,527.7 L546.9,527.6 L547.0,527.4 L547.0,527.2 L547.2,526.2 L547.2,526.0 L547.3,525.9 L547.3,525.8 L547.5,525.8 L547.6,525.7 L547.9,525.7 L548.1,525.6 L548.2,525.6 L548.4,525.5 L548.5,525.3 L548.6,525.2 L548.6,525.0 L548.9,524.2 L548.9,524.0 L548.9,523.8 L549.0,523.3 L548.9,523.2 L548.9,523.0 L548.7,522.6 L548.7,522.4 L548.6,522.2 L548.7,522.1 L548.7,521.9 L548.7,521.8 L548.8,521.6 L548.9,521.5 L549.0,521.4 L549.0,521.4 L549.2,521.3 L549.4,521.2 L549.6,521.1 L549.7,521.0 L550.1,520.6 L550.4,520.2 L551.1,519.7 L551.1,519.6 L551.2,519.4 L551.3,519.3 L551.5,518.7 L551.5,518.5 L551.6,518.4 L551.7,518.3 L551.9,518.3 L552.2,518.2 L552.3,518.1 L552.5,518.0 L552.8,517.7 L553.0,517.4 L553.3,517.2 L554.2,516.1 L554.3,516.0 L554.4,515.9 L554.6,515.8 L554.7,515.7 L555.0,515.6 L555.2,515.6 L555.3,515.5 L555.7,515.3 L555.8,515.2 L556.0,515.1 L556.4,515.0 L556.6,515.0 L557.0,514.9 L557.2,514.9 L557.4,514.8 L557.8,514.6 L558.5,514.3 L558.6,514.3 L558.7,514.2 L559.2,513.9 L559.4,513.8 L559.6,513.7 L559.7,513.7 L559.9,513.7 L560.3,513.6 L561.1,513.6 L561.3,513.6 L561.5,513.7 L561.7,513.7 L561.9,513.8 L562.1,513.8 L562.2,513.9 L562.9,514.3 L563.2,514.5 L563.4,514.7 L563.8,514.9 L564.4,515.2 L564.6,515.2 L564.7,515.3 L564.8,515.3 L565.0,515.3 L565.2,515.2 L565.2,515.2 L565.3,515.1 L565.8,514.9 L566.2,514.6 L566.4,514.4 L566.4,514.4 L566.5,514.3 L566.5,514.2 L566.5,514.1 L566.5,514.0 L566.5,514.0 L566.5,513.7 L566.4,513.5 L566.5,513.4 L566.5,513.3 L566.7,511.3 L566.8,510.9 L566.9,510.5 L567.4,509.0 L567.4,508.8 L567.5,508.6 L567.6,507.8 L567.6,507.6 L567.6,507.5 L567.7,507.3 L567.8,507.2 L567.9,507.0 L568.0,506.9 L568.1,506.8 L568.2,506.7 L568.4,506.6 L569.1,506.3 L569.2,506.3 L569.3,506.2 L569.3,506.0 L569.3,505.9 L569.3,505.8 L569.2,505.7 L569.1,505.6 L569.0,505.5 L568.9,505.5 L568.6,505.5 L568.4,505.5 L568.3,505.4 L568.3,505.3 L568.3,505.2 L568.3,505.1 L568.4,505.0 L568.5,505.0 L568.6,504.9 L569.3,504.9 L569.4,504.9 L569.5,504.8 L569.8,504.8 L569.9,504.7 L570.8,504.5 L571.0,504.4 L571.2,504.3 L571.6,504.1 L572.3,503.6 L574.1,502.5 L574.2,502.5 L574.3,502.4 L574.4,502.4 L574.6,502.4 L575.2,502.3 L575.4,502.3 L575.6,502.2 L575.7,502.1 L575.8,502.0 L575.9,501.9 L576.0,501.7 L576.1,501.6 L576.1,501.4 L576.1,501.2 L576.1,500.8 L576.1,500.7 L576.1,500.6 L576.1,500.3 L576.2,499.9 L577.0,497.1 L577.2,496.6 L577.3,496.4 L577.4,496.3 L577.5,496.1 L577.7,495.9 L577.9,495.8 L578.1,495.8 L578.3,495.7 L578.3,495.7 L578.5,495.7 L579.2,495.7 L579.7,495.7 L579.8,495.7 L580.0,495.6 L580.2,495.5 L580.6,495.3 L581.2,494.9 L581.6,494.7 L581.8,494.6 L582.0,494.6 L582.2,494.6 L582.7,494.8 L583.1,495.0 L583.7,495.2 L584.0,495.2 L584.2,495.3 L584.4,495.2 L584.7,495.2 L584.9,495.1 L585.6,494.9 L586.0,494.7 L586.2,494.6 L586.4,494.4 L586.6,494.3 L586.8,494.2 L586.8,494.1 L587.0,494.0 L587.0,493.9 L587.1,493.8 L587.3,493.5 L587.4,493.1 L587.5,492.9 L587.6,492.6 L587.6,492.4 L587.6,492.0 L587.4,489.8 L587.4,489.5 L587.4,489.3 L587.3,489.2 L587.3,489.0 L587.0,488.5 L586.7,488.0 L586.6,487.8 L586.5,487.7 L586.3,487.5 L585.5,486.6 L584.7,485.8 L584.2,485.3 L583.8,484.8 L583.4,484.4 L583.0,484.0 L582.3,483.3 L582.0,482.8 L581.9,482.7 L581.7,482.4 L581.5,482.1 L581.3,481.4 L580.9,480.6 L580.9,480.5 L580.6,480.0 L580.5,479.8 L580.4,479.6 L580.4,479.5 L580.4,479.4 L580.5,479.3 L580.7,478.9 L581.2,477.8 L581.3,477.4 L581.5,477.2 L581.6,477.1 L581.9,476.7 L582.2,476.4 L582.3,476.2 L582.4,476.1 L582.4,476.0 L582.4,476.0 L582.4,475.9 L582.4,475.7 L582.3,475.7 L582.3,475.7 L582.3,475.7 L582.2,475.7 L582.0,475.9 L582.0,475.9 L581.9,476.0 L581.9,476.0 L581.9,476.0 L581.7,476.0 L581.3,476.1 L581.2,476.1 L581.1,476.1 L580.9,476.0 L580.6,475.9 L580.4,475.9 L580.3,475.9 L580.3,475.9 L580.0,476.0 L579.9,476.0 L579.8,476.0 L579.5,476.0 L579.3,476.0 L579.1,475.9 L579.0,475.8 L578.9,475.8 L578.8,475.6 L578.8,475.5 L578.8,475.4 L578.8,475.3 L578.9,475.1 L579.0,475.0 L579.0,474.9 L579.0,473.8 L579.0,473.2 L579.1,472.9 L579.1,472.5 L579.3,471.5 L579.3,471.0 L579.4,470.5 L579.5,470.2 L579.2,470.2 L578.4,470.0 L577.9,469.8 L577.7,469.8 L577.6,469.8 L577.3,470.0 L577.0,470.0 L576.2,470.2 L574.6,470.5 L574.4,469.8 L574.3,469.4 L573.8,468.2 L573.8,468.1 L573.7,468.1 L573.6,468.1 L573.5,468.0 L572.6,468.1 L572.3,468.1 L572.1,468.2 L571.7,468.3 L571.7,468.3 L571.4,468.4 L571.3,468.5 L571.2,468.6 L571.1,468.6 L570.9,468.7 L570.6,468.8 L570.0,468.9 L569.8,469.0 L569.7,469.0 L568.9,469.3 L568.8,469.4 L568.7,469.4 L568.6,469.5 L568.5,469.6 L568.2,469.8 L568.1,469.9 L568.0,470.0 L567.9,470.2 L567.8,470.3 L567.7,470.4 L567.7,470.5 L567.6,470.6 L567.5,470.6 L567.5,470.7 L567.4,470.8 L567.3,470.9 L567.3,471.0 L567.2,471.0 L567.2,471.1 L567.0,471.1 L566.9,471.1 L566.8,471.2 L566.7,471.2 L565.9,471.7", "mid": [570.9553223077463, 504.39084992246035], "start": [518.6734693877555, 536.97528019991], "min": 21, "km": 12}, "aix": {"d": "M751.9,796.8 L750.6,794.7 L734.0,802.2 L731.3,812.9 L716.8,822.2 L706.8,833.7 L700.3,835.4 L695.9,834.6 L673.8,805.5 L667.3,777.7 L674.5,757.0 L671.6,730.5 L666.6,715.3 L651.9,689.0 L653.4,680.8 L664.5,661.1 L664.5,652.7 L660.1,643.0 L648.5,632.3 L634.3,611.4 L595.0,596.5 L586.3,590.0 L548.8,539.9 L528.9,501.1 L527.7,487.6 L522.9,488.0 L526.3,449.0 L534.8,441.0 L546.5,438.6 L548.5,440.8 L593.9,446.6 L594.6,449.4 L589.8,449.4 L592.2,450.4 L586.3,455.4 L581.1,467.7 L575.2,466.3 L565.9,471.7", "mid": [689.3898816757935, 825.9631263072224], "start": [752.2448979591836, 796.7201505066995], "min": 47, "km": 53}, "avignon": {"d": "M210.5,139.3 L212.5,141.3 L204.5,139.3 L205.1,136.6 L202.0,135.2 L199.7,137.7 L205.2,139.4 L210.5,148.2 L216.5,150.5 L215.1,157.4 L228.5,160.5 L232.0,153.5 L238.9,160.3 L244.4,175.9 L252.4,177.9 L263.7,185.5 L267.5,184.9 L275.0,190.4 L309.6,186.5 L320.6,190.5 L327.7,186.0 L343.9,191.8 L344.3,181.2 L341.9,176.4 L343.8,175.2 L354.7,197.5 L377.6,205.9 L398.4,218.4 L415.2,238.2 L426.5,257.2 L455.6,276.7 L467.3,297.5 L471.4,320.3 L508.4,365.8 L514.4,379.2 L515.3,389.3 L521.9,394.6 L540.3,393.5 L553.1,395.8 L575.7,408.4 L591.9,413.4 L589.8,422.6 L594.5,441.2 L587.6,444.7 L593.9,446.6 L594.6,449.4 L589.8,449.4 L592.2,450.4 L586.3,455.4 L581.1,467.7 L575.2,466.3 L565.9,471.7", "mid": [390.3691539023251, 213.5486015994055], "start": [210.43265306122433, 139.51486416076872], "min": 59, "km": 56}, "aeroport": {"d": "M654.9,821.4 L657.5,822.9 L662.7,817.9 L659.8,812.0 L665.7,811.7 L663.6,806.9 L666.7,790.3 L664.6,744.7 L674.5,740.0 L667.3,716.7 L651.9,689.0 L653.4,680.8 L663.7,664.2 L664.5,652.7 L658.4,640.1 L648.5,632.3 L635.7,612.4 L587.4,591.3 L547.9,538.3 L528.9,501.1 L527.7,487.6 L522.9,488.0 L526.5,448.6 L534.5,441.2 L546.5,438.6 L548.5,440.8 L593.9,446.6 L594.6,449.4 L589.8,449.4 L592.2,450.4 L586.3,455.4 L581.1,467.7 L575.2,466.3 L565.9,471.7", "mid": [664.6773256293451, 747.3930915546244], "start": [648.2653061224493, 823.7945343823222], "min": 47, "km": 48}}, "dom": [564.397959183674, 472.39159366326146], "towns": [["Avignon", 230.10204081632688, 99.69577812535385, 9, -8, "start"], ["Aix-en-Provence", 885.102040816327, 691.3838757405935, -9, -8, "end"], ["Marseille", 805.9183673469388, 1020.2248298966252, 9, 5, "start"]], "nature": [["Mer M\u00e9diterran\u00e9e", 346.9387755102041, 994.1375329331374, 0]], "monsters": [["gargouille", 102.16326530612278, 276.71565543182453, 112, 151.63076923076923, "img/e880cf7070.png"], ["sorciere", 27.97959183673477, 718.4963575741908, 112, 135.013698630137, "img/45edcd6025.png"], ["foret", 701.30612244898, 171.0728033018696, 128, 151.3978494623656, "img/cc3ab41129.png"]]};
+const DEST = "Domaine+de+la+Reynaude,+Les+Sonnaillets,+13121+Aurons";
+const STATIONS = [
+  {id:"salon", name:"Gare de Salon-de-Provence", tag:"La plus proche",
+   short:"Salon-de-Provence", sub:"gare", ll:"43.6392,5.0883",
+   train:["Depuis Paris : en général une correspondance, 4 h 30 à 5 h.","TER depuis Marseille, Avignon ou l'aéroport (gare Vitrolles-Aéroport)."],
+   lx:-12, ly:32, anchor:"end"},
+  {id:"aix", name:"Gare d'Aix-en-Provence TGV", tag:"TGV direct depuis Paris",
+   short:"Aix-en-Provence TGV", sub:"gare", ll:"43.4550,5.3172",
+   train:["Depuis Paris : TGV direct, environ 3 h.","Depuis Dijon : quelques TGV directs (environ 3 h 30), sinon via Lyon."],
+   lx:14, ly:2, anchor:"start"},
+  {id:"avignon", name:"Gare d'Avignon TGV", tag:"Le plus rapide depuis Paris",
+   short:"Avignon TGV", sub:"gare", ll:"43.921062,4.786224",
+   train:["Depuis Paris : TGV direct, environ 2 h 40.","Depuis Dijon : quelques TGV directs, environ 3 h."],
+   lx:-16, ly:-4, anchor:"end"},
+  {id:"aeroport", name:"Aéroport Marseille-Provence", tag:"En avion",
+   short:"Aéroport Marseille-Provence", sub:"Marignane", ll:"43.4358,5.2153",
+   train:["Vols depuis Paris (Orly et Roissy).","Location de voitures sur place."],
+   lx:-14, ly:2, anchor:"end", plane:true},
+];
+const NS="http://www.w3.org/2000/svg";
+const svg=document.getElementById("map");
+svg.setAttribute("viewBox",`0 0 ${DATA.W} ${Math.round(DATA.H)}`);
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e}
+function fmt(m){return m<60?`${m} min`:`${Math.floor(m/60)} h${m%60?" "+String(m%60).padStart(2,"0"):""}`}
+function approx(m){const r=m<30?Math.round(m/5)*5:Math.round(m/5)*5;return "≈ "+fmt(r)}
+const L=DATA.layers;
+el("rect",{x:0,y:0,width:DATA.W,height:DATA.H,fill:"var(--land)"});
+el("path",{d:L.sea,fill:"var(--water)"});
+el("path",{d:L.lakes,fill:"var(--water)"});
+el("path",{d:L.rivers,fill:"none",stroke:"var(--river)","stroke-width":2.6,"stroke-linecap":"round"});
+el("path",{d:L.second,fill:"none",stroke:"var(--road2)","stroke-width":2.2,"stroke-linecap":"round"});
+el("path",{d:L.major,fill:"none",stroke:"var(--road)","stroke-width":3.6,"stroke-linecap":"round"});
+const gNat=el("g",{});
+for(const [n,x,y,rot] of DATA.nature){
+  const t=el("text",{x,y,class:"nature"+(/Alpilles|Luberon/.test(n)?" relief":""),"text-anchor":"middle",transform:rot?`rotate(${rot} ${x} ${y})`:""},gNat);t.textContent=n;
+}
+const gTown=el("g",{});
+for(const [n,x,y,dx,dy,a] of DATA.towns){
+  el("circle",{cx:x,cy:y,r:3.2,fill:"#8A7F70"},gTown);
+  const t=el("text",{x:x+dx,y:y+dy,class:"town halo","text-anchor":a},gTown);t.textContent=n;
+}
+const gMon=el("g",{});
+for(const [n,x,y,w,h,src] of DATA.monsters){
+  const im=el("image",{x,y,width:w,height:h,opacity:.9},gMon);im.setAttribute("href",src);
+}
+const gRoutes=el("g",{id:"routes"});
+const routeEls={};
+for(const s of STATIONS){
+  const r=DATA.routes[s.id];
+  const g=el("g",{"data-id":s.id},gRoutes);
+  el("path",{d:r.d,class:"casing"},g);
+  el("path",{d:r.d,class:"route"},g);
+  routeEls[s.id]=g;
+}
+const chipEls={};
+// Domaine : écusson + banderole
+const [dx,dy]=DATA.dom;
+const gd=el("g",{});
+el("ellipse",{cx:dx,cy:dy+34,rx:26,ry:6,fill:"#000",opacity:.12},gd);
+el("circle",{cx:dx,cy:dy,r:33,fill:"var(--gold)"},gd);
+el("circle",{cx:dx,cy:dy,r:29,fill:"var(--route)",stroke:"#FFF6E6","stroke-width":3},gd);
+// tour
+const T=`M${dx-11},${dy+17} L${dx-11},${dy-6} L${dx-14},${dy-6} L${dx-14},${dy-14} L${dx-9},${dy-14} L${dx-9},${dy-10} L${dx-4},${dy-10} L${dx-4},${dy-14} L${dx+4},${dy-14} L${dx+4},${dy-10} L${dx+9},${dy-10} L${dx+9},${dy-14} L${dx+14},${dy-14} L${dx+14},${dy-6} L${dx+11},${dy-6} L${dx+11},${dy+17} Z`;
+el("path",{d:T,fill:"#FFF6E6"},gd);
+el("path",{d:`M${dx-3.5},${dy+17} L${dx-3.5},${dy+9} Q${dx},${dy+4} ${dx+3.5},${dy+9} L${dx+3.5},${dy+17} Z`,fill:"var(--route)"},gd);
+el("path",{d:`M${dx-3},${dy+1} L${dx-3},${dy-3} Q${dx},${dy-6} ${dx+3},${dy-3} L${dx+3},${dy+1} Z`,fill:"var(--gold)"},gd);
+el("path",{d:`M${dx},${dy-14} L${dx},${dy-25}`,stroke:"#FFF6E6","stroke-width":2,"stroke-linecap":"round"},gd);
+el("path",{d:`M${dx+1},${dy-25} L${dx+11},${dy-22} L${dx+1},${dy-19} Z`,fill:"#C8327F"},gd);
+// banderole
+const bx=dx+42, by=dy-22, bw=318, bh=44;
+el("path",{d:`M${bx-14},${by+6} L${bx+6},${by+6} L${bx+6},${by+bh+6} L${bx-14},${by+bh+6} L${bx-4},${by+bh/2+6} Z`,fill:"#5A1729"},gd);
+el("path",{d:`M${bx+bw+14},${by+6} L${bx+bw-6},${by+6} L${bx+bw-6},${by+bh+6} L${bx+bw+14},${by+bh+6} L${bx+bw+4},${by+bh/2+6} Z`,fill:"#5A1729"},gd);
+el("rect",{x:bx,y:by,width:bw,height:bh,rx:3,fill:"var(--dom)"},gd);
+const dl=el("text",{x:bx+bw/2,y:by+30,"text-anchor":"middle","font-family":"Fraunces, serif","font-size":25,"font-weight":700,"font-style":"italic",fill:"#FFF6E6"},gd);dl.textContent="Domaine de la Reynaude";
+const dl2=el("text",{x:bx+bw/2,y:by+bh+26,class:"halo stsub","text-anchor":"middle"},gd);dl2.textContent="Aurons · le lieu du mariage";
+// Stations
+const stEls={};
+for(const s of STATIONS){
+  const [x,y]=DATA.routes[s.id].start;
+  const g=el("g",{class:"station","data-id":s.id,tabindex:0});
+  el("circle",{cx:x,cy:y,r:15,class:"bg",stroke:"#fff","stroke-width":2.5},g);
+  if(s.plane){
+    const t=el("text",{x,y:y+6.5,"text-anchor":"middle","font-size":18,fill:"#fff"},g);t.textContent="✈";
+  }else{
+    el("rect",{x:x-6,y:y-8,width:12,height:12,rx:3,fill:"#fff"},g);
+    el("rect",{x:x-4,y:y-6,width:8,height:4,rx:1,fill:"var(--ink)"},g);
+    el("path",{d:`M${x-5},${y+8} L${x-2.5},${y+4} M${x+5},${y+8} L${x+2.5},${y+4}`,stroke:"#fff","stroke-width":1.8,"stroke-linecap":"round"},g);
+  }
+  const t=el("text",{x:x+s.lx,y:y+s.ly,class:"stlabel halo","text-anchor":s.anchor},g);t.textContent=s.short;
+  const tt=el("text",{x:x+s.lx,y:y+s.ly+21,class:"sttime halo","text-anchor":s.anchor},g);tt.textContent=approx(DATA.routes[s.id].min)+" du domaine";
+  stEls[s.id]=g;
+}
+// Cartes
+const cards=document.getElementById("cards");
+const cardEls={};
+for(const s of STATIONS){
+  const r=DATA.routes[s.id];
+  const c=document.createElement("div");c.className="card";c.dataset.id=s.id;
+  c.innerHTML=`<div class="tag">${s.tag}</div><h3><span>${s.name}</span><span class="t">${approx(r.min)}</span></h3>
+  <p>${r.km} km jusqu'au domaine en voiture.</p>${s.train.map(x=>`<p>${x}</p>`).join("")}
+  <div class="links"><a href="https://www.google.com/maps/dir/?api=1&origin=${s.ll}&destination=${DEST}&travelmode=driving" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+  <a href="https://waze.com/ul?ll=43.685,5.13311&navigate=yes" target="_blank" rel="noopener">Waze</a></div>`;
+  cards.appendChild(c);cardEls[s.id]=c;
+}
+const car=document.createElement("div");car.className="car";
+car.innerHTML=`<h4>En voiture</h4><p><b>Depuis Paris :</b> environ 730 km, 7 h 45 hors pauses.</p><p><b>Depuis Dijon :</b> environ 460 km, 5 h hors pauses.</p><p style="margin-top:8px"><a href="https://domainedelareynaude.fr/" target="_blank" rel="noopener" style="color:var(--route);font-weight:700;text-decoration:none">Le site du domaine</a></p>`;
+cards.appendChild(car);
+let current=null;
+function select(id){
+  current=(current===id)?null:id;
+  svg.classList.toggle("sel",!!current);
+  for(const s of STATIONS){
+    const on=s.id===current, dim=current&&!on;
+    routeEls[s.id].classList.toggle("dim",!!dim);
+    stEls[s.id].classList.toggle("on",on);
+    stEls[s.id].classList.toggle("dimst",!!dim);
+    cardEls[s.id].classList.toggle("on",on);
+    if(on){gRoutes.appendChild(routeEls[s.id]);}
+  }
+}
+for(const s of STATIONS){
+  stEls[s.id].addEventListener("click",()=>select(s.id));
+  cardEls[s.id].addEventListener("click",e=>{if(e.target.tagName!=="A")select(s.id)});
+}
+
+</script>
+<script>
+// navigation
+const nav=document.getElementById("nav");
+addEventListener("scroll",()=>nav.classList.toggle("solid",scrollY>innerHeight*0.6),{passive:true});
+const FROGS={front:"img/ce35c170db.png",jump:"img/41f52b7995.png",up:"img/ce35c170db.png",crouch:"img/a229bf7aac.png"};
+// formulaire
+const people=document.getElementById("people"), pads=document.getElementById("pads");
+function segInit(seg){seg.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+  seg.querySelectorAll("button").forEach(x=>x.classList.remove("on","no"));b.classList.add("on");if(b.dataset.v==="non")b.classList.add("no");seg.dataset.value=b.dataset.v;}))}
+document.querySelectorAll(".seg").forEach(segInit);
+function addPerson(first){
+  const d=document.createElement("div");d.className="person";
+  d.innerHTML=`<div><label>${first?"Votre prénom et nom":"Prénom et nom"}</label><input type="text" placeholder="${first?"Johanna Darmon":"Prénom Nom"}"></div>
+  <button type="button" class="x" title="Retirer" ${first?'style="visibility:hidden"':''}>×</button>
+  <div class="full"><label>Présent(e) ?</label><div class="seg" data-name="present"><button type="button" data-v="oui">Oui</button><button type="button" data-v="non">Non</button></div></div>
+  <div class="full"><label>Régime ou allergie</label><input type="text" placeholder="Facultatif"></div>`;
+  people.appendChild(d);segInit(d.querySelector(".seg"));
+  d.querySelector(".x").addEventListener("click",()=>{d.remove();drawPads()});
+  drawPads(true);
+}
+function drawPads(pop){
+  const n=people.children.length;pads.innerHTML="";
+  for(let i=0;i<n;i++){const im=document.createElement("img");im.src=i%2?FROGS.up:FROGS.crouch;pads.appendChild(im);
+    if(pop&&i===n-1&&window.gsap)gsap.from(im,{y:-40,duration:.5,ease:"bounce.out"});}
+}
+addPerson(true);
+document.getElementById("addp").addEventListener("click",()=>addPerson(false));
+const form=document.getElementById("rsvp");
+// envoi
+function petals(){
+  const cols=["#C8462C","#D9A441","#FFF3E2","#C8327F","#4C5A2E"];
+  for(let i=0;i<40;i++){const p=document.createElement("div");p.className="petal";p.style.left=Math.random()*100+"vw";p.style.background=cols[i%cols.length];document.body.appendChild(p);
+    if(window.gsap){gsap.to(p,{y:innerHeight+60,x:(Math.random()-.5)*200,rotation:Math.random()*720,duration:2.5+Math.random()*2,ease:"none",delay:Math.random()*.8,onComplete:()=>p.remove()});}else{setTimeout(()=>p.remove(),100)}}
+}
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const yes=[...people.querySelectorAll('.seg')].some(s=>s.dataset.value==="oui");
+  const th=document.getElementById("thanks");th.style.display="block";th.classList.toggle("no",!yes);
+  th.innerHTML=yes?'<span class="disp">Merci !</span>On a hâte de vous voir le 12 juin.':'<span class="disp">Vous allez nous manquer.</span>Merci de nous avoir répondu.';
+  if(yes){petals();}
+});
+// apparitions douces
+if(window.gsap){
+  gsap.from(".hero .kick, .hero h1, .hero p, .hero .btns",{y:24,opacity:0,duration:.9,stagger:.12,ease:"power2.out"});
+  gsap.utils.toArray(".sec .kicker, .sec h2, .sec .lead").forEach(el=>gsap.from(el,{y:20,opacity:0,duration:.7,ease:"power2.out",scrollTrigger:{trigger:el,start:"top 85%"}}));
+  // tracé des trajets à l'arrivée sur la carte
+  document.querySelectorAll("#routes .route").forEach(p=>{const L=p.getTotalLength();p.style.strokeDasharray=L;p.style.strokeDashoffset=L;});
+  ScrollTrigger.create({trigger:"#map",start:"top 70%",once:true,onEnter:()=>{document.querySelectorAll("#routes .route").forEach((p,i)=>gsap.to(p,{strokeDashoffset:0,duration:1.6,delay:i*.15,ease:"power2.inOut",onComplete:()=>{p.style.strokeDasharray="none"}}))}});
+}
+</script>
+</body>
+</html>
