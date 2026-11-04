@@ -99,12 +99,14 @@ svg{display:block;width:100%;height:auto}
 .car{border:1px dashed #DCC6A3;border-radius:8px;padding:14px 18px}
 .car h4{margin:0 0 6px;font-size:16px}.car p{margin:2px 0;font-size:15px;color:#4A3F35}
 /* programme */
-.imgsec{position:relative;background-size:cover;background-position:center 35%;color:#FFF7EA}
+.imgsec{position:relative;background-size:cover;background-position:center bottom;color:#FFF7EA;min-height:calc(100vw * 1536 / 2752);display:flex;align-items:center}
+.imgsec>.wrap{width:100%}
+@media (max-width:820px){.imgsec{min-height:0;background-position:68% bottom}}
 .imgsec::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,20,12,.84) 0%,rgba(32,20,12,.6) 50%,rgba(32,20,12,.25) 100%)}
 .imgsec .wrap{position:relative}
 .imgsec .kicker{color:var(--or)}
 .imgsec h2{color:#FFF7EA}
-.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;max-width:860px}
+.days{display:grid;grid-template-columns:1fr;gap:18px;max-width:500px}
 .day{background:rgba(251,244,232,.08);border:1px solid rgba(251,244,232,.22);border-radius:10px;padding:22px 24px;backdrop-filter:blur(2px)}
 .day h3{margin:0 0 12px;font-size:28px;color:var(--or)}
 .day ol{list-style:none;margin:0;padding:0}
@@ -120,7 +122,13 @@ svg{display:block;width:100%;height:auto}
 .travaux p{margin:0;color:#4F4338;font-size:17px}
 @media (max-width:620px){.travaux{flex-direction:column;text-align:center}}
 /* répondre */
-.rsvp-band{height:320px;background-size:cover;background-position:center 40%;border-radius:12px 12px 0 0}
+.rsvp-top{position:relative;border-radius:12px 12px 0 0;overflow:hidden}
+.rsvp-img{display:block;width:100%;height:auto}
+.rsvp-top::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(251,244,232,.7) 0%,rgba(251,244,232,.35) 38%,rgba(251,244,232,0) 55%);pointer-events:none}
+.rsvp-head{position:absolute;z-index:1;left:5%;top:50%;transform:translateY(-50%);width:40%}
+.rsvp-head h2{margin-top:6px}
+.rsvp-head .lead{margin:0;font-size:17px}
+@media (max-width:820px){.rsvp-top{overflow:visible}.rsvp-top::after{display:none}.rsvp-head{position:static;transform:none;width:auto;margin-bottom:18px}.rsvp-top{display:flex;flex-direction:column-reverse}.rsvp-img{border-radius:12px 12px 0 0}}
 .rsvp{background:#FFF9EF;border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px;padding:34px 34px 40px;position:relative;overflow:hidden}
 .rsvp .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 @media (max-width:820px){.rsvp .cols{grid-template-columns:1fr}.rsvp{padding:24px 18px 32px}}
@@ -203,7 +211,7 @@ footer img{width:70px;margin-top:10px}
   </div>
 </section>
 
-<section id="programme" class="imgsec sec" style="background-image:url(img/e992863628.jpg)">
+<section id="programme" class="imgsec sec" style="background-image:url(img/a92ae87c59.jpg)">
   <div class="wrap">
     <div class="kicker">Programme</div>
     <h2 class="disp">Le week-end</h2>
@@ -231,10 +239,14 @@ footer img{width:70px;margin-top:10px}
 
 <section id="repondre" class="sec">
   <div class="wrap">
-    <div class="kicker">Répondre</div>
-    <h2 class="disp">Serez-vous des nôtres ?</h2>
-    <p class="lead">Une seule réponse pour vous et, s'il y a lieu, les personnes invitées avec vous. Dites-nous qui vient, et laissez-nous votre adresse pour le faire-part.</p>
-    <div class="rsvp-band" style="background-image:url(img/8b8bddf283.jpg)"></div>
+    <div class="rsvp-top">
+      <img class="rsvp-img" src="img/8b8bddf283.jpg" alt="">
+      <div class="rsvp-head">
+        <div class="kicker">Répondre</div>
+        <h2 class="disp">Serez-vous des nôtres ?</h2>
+        <p class="lead">Une seule réponse pour vous et, s'il y a lieu, les personnes invitées avec vous. Dites-nous qui vient, et laissez-nous votre adresse pour le faire-part.</p>
+      </div>
+    </div>
     <form class="rsvp" id="rsvp" novalidate>
       <div class="cols">
         <div>
