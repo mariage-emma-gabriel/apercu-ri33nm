@@ -440,7 +440,7 @@ function segInit(seg){seg.querySelectorAll("button").forEach(b=>b.addEventListen
 document.querySelectorAll(".seg").forEach(segInit);
 function addPerson(first){
   const d=document.createElement("div");d.className="person";
-  d.innerHTML=`<div><label>${first?"Votre prénom et nom":"Prénom et nom"}</label><input type="text" placeholder="${first?"Johanna Darmon":"Prénom Nom"}"></div>
+  d.innerHTML=`<div><label>${first?"Votre prénom et nom":"Prénom et nom"}</label><input type="text" placeholder="${first?"Jean Dupont":"Prénom Nom"}"></div>
   <button type="button" class="x" title="Retirer" ${first?'style="visibility:hidden"':''}>×</button>
   <div class="full"><label>Présent(e) ?</label><div class="seg" data-name="present"><button type="button" data-v="oui">Oui</button><button type="button" data-v="non">Non</button></div></div>
   <div class="full"><label>Régime ou allergie</label><input type="text" placeholder="Facultatif"></div>`;
